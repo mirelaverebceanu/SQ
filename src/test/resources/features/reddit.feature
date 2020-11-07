@@ -1,6 +1,6 @@
 Feature: Reddit
 
-  Scenario Outline: Search for computer and logo presence
+  Scenario Outline: Search for <element> and logo presence
     Given The chrome browser is launched
     When The reddit web page is opened
     Then Search for "<element>"
@@ -10,3 +10,4 @@ Feature: Reddit
     Examples:
       | element  |
       | computer |
+      | art      |
