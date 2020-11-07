@@ -16,13 +16,6 @@
             <version>6.6.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-html</artifactId>
-            <version>0.2.7</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
         <dependency>
             <groupId>io.cucumber</groupId>
@@ -36,14 +29,6 @@
             <artifactId>cucumber-junit</artifactId>
             <version>6.6.0</version>
             <scope>test</scope>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-jvm-deps</artifactId>
-            <version>1.0.6</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- https://mvnrepository.com/artifact/net.masterthought/cucumber-reporting -->
