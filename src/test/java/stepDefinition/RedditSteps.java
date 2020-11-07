@@ -36,7 +36,7 @@ public class RedditSteps {
         driver.findElement(By.xpath("//*[@id=\"SHORTCUT_FOCUSABLE_DIV\"]/div[1]/header/div/div[1]//input")).sendKeys(element);
         driver.findElement(By.xpath("//*[@id=\"SHORTCUT_FOCUSABLE_DIV\"]/div[1]/header/div/div[1]//input")).sendKeys(Keys.ENTER);
         Thread.sleep(2000);
-        Assert.assertEquals(true, driver.findElement(By.xpath("//*[@id=\"SHORTCUT_FOCUSABLE_DIV\"]/div[2]/div/div/div/div[2]/div[1]//span[contains(text(), 'computer')]")).isDisplayed());
+        Assert.assertEquals(true, driver.findElement(By.xpath("//*[@id=\"SHORTCUT_FOCUSABLE_DIV\"]/div[2]/div/div/div/div[2]/div[1]//span[contains(text(), '" + element + "')]")).isDisplayed());
     }
 
     @Then("^Validate the logo presence$")
