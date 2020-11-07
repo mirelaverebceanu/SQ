@@ -4,12 +4,15 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+
+@CucumberOptions(plugin = {"pretty"}, features = "src/test/resources/features/", glue = {"stepDefinition"})
 public class RedditSteps {
 
     WebDriver driver;

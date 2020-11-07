@@ -5,7 +5,7 @@ import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features = "features/reddit.feature", glue = {"stepDefinition"})
+@CucumberOptions(features = "src/test/resources/features/reddit.feature", glue = {"stepDefinition"})
 
 public class RedditRunner {
 }
