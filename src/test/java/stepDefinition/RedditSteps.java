@@ -19,7 +19,7 @@ public class RedditSteps {
 
     @Given("^The chrome browser is launched$")
     public void the_chrome_browser_is_launched() throws Throwable {
-        System.setProperty("webdriver.chrome.driver", "D://SQ//chromedriver_win32/chromedriver.exe");
+//        System.setProperty("webdriver.chrome.driver", "D://SQ//chromedriver_win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
 
