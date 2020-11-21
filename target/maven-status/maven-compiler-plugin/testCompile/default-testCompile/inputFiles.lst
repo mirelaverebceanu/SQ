@@ -1,2 +1,5 @@
-D:\SQ\src\test\java\testRunner\RedditRunner.java
-D:\SQ\src\test\java\stepDefinition\RedditSteps.java
+D:\SQ\src\test\java\testRunner\AddReviewRunner.java
+D:\SQ\src\test\java\base\BasePage.java
+D:\SQ\src\test\java\poms\WomenProductsPage.java
+D:\SQ\src\test\java\stepDefinition\AddReviewSteps.java
+D:\SQ\src\test\java\base\BaseTest.java

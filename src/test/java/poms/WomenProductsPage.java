@@ -42,6 +42,21 @@ public class WomenProductsPage {
     @FindBy(xpath = "//div[@class = \"responsive_tabs_agileits\"]//div[@class=\"resp-tabs-container\"]//textarea[@name=\"Message\"]")
     public WebElement messageField;
 
+    @FindBy(xpath = "//label[contains(text(), \"Lower Price\")]")
+    public WebElement poll;
+
+    @FindBy(xpath = "//div[@class=\"community-poll\"]//input[@type=\"submit\"]")
+    public WebElement sendPoll;
+
+    @FindBy(xpath = "//input[@value=\"Add to cart\"]")
+    public WebElement addToCart;
+
+    @FindBy(xpath = "//input[@class=\"minicart-quantity\"]")
+    public WebElement addQnt;
+
+    @FindBy(xpath = "//button[@class='w3view-cart']")
+    public WebElement viewCart;
+
     public WomenProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -84,5 +99,30 @@ public class WomenProductsPage {
         ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", element);
     }
 
+    public void clickOnReplayBtn() {
+
+        replayBtn.click();
+    }
+
+    public void clickOnPollRadioBtn() {
+        poll.click();
+    }
+
+    public void clickOnSendPollBtn() {
+        sendPoll.click();
+    }
+
+    public void clickOnAddToChartBtn() {
+        addToCart.click();
+    }
+
+    public void inputQuantity() {
+        addQnt.click();
+        addQnt.sendKeys("a");
+    }
+
+    public void clickOnViewChart() {
+        viewCart.click();
+    }
 
 }

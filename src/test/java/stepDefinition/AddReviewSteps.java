@@ -7,6 +7,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +19,7 @@ import poms.WomenProductsPage;
 import java.util.List;
 import java.util.Map;
 
+@CucumberOptions(plugin = {"pretty"}, features = "src/test/resources/features/", glue = {"stepDefinition"})
 public class AddReviewSteps extends BaseTest {
 
     static WomenProductsPage womenProductsPage;
