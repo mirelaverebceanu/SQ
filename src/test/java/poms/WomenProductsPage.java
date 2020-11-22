@@ -57,6 +57,21 @@ public class WomenProductsPage {
     @FindBy(xpath = "//button[@class='w3view-cart']")
     public WebElement viewCart;
 
+    @FindBy(xpath = "//input[@class='minicart-quantity']")
+    public WebElement quantity;
+
+    @FindBy(xpath = "//p[@class='minicart-empty-text']")
+    public WebElement empty;
+
+    @FindBy(xpath = "//a[contains(text(), 'A-line Black Skirt')]")
+    public WebElement element;
+
+    @FindBy(xpath = "//span[@class='item_price'][1]/parent::p/preceding-sibling::h3")
+    public WebElement returnedElement;
+
+    @FindBy(xpath = "//div[@class='reply']//form")
+    public WebElement replyForm;
+
     public WomenProductsPage(WebDriver driver) {
         this.driver = driver;
         PageFactory.initElements(driver, this);
@@ -123,6 +138,30 @@ public class WomenProductsPage {
 
     public void clickOnViewChart() {
         viewCart.click();
+    }
+
+    public String getQuantity() {
+        return quantity.getText();
+    }
+
+    public boolean getEmptyQtyText() {
+        return empty.isDisplayed();
+    }
+
+    public String getElementName() {
+        return element.getText();
+    }
+
+    public String getReturnedElemName() {
+        return returnedElement.getText();
+    }
+
+    public boolean isReplyFormDisplayed() {
+        return replyForm.isDisplayed();
+    }
+
+    public boolean isRadioBtnChecked() {
+        return poll.isSelected();
     }
 
 }
