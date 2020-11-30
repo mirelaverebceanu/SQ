@@ -61,10 +61,4 @@ public class AddToCartSteps extends BaseTest {
         Assert.assertTrue(womenProductsPage.getEmptyQtyText());
 
     }
-
-    @After
-    public void afterTest() {
-        driver.close();
-        driver.quit();
-    }
 }

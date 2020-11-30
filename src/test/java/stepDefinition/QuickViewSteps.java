@@ -56,10 +56,4 @@ public class QuickViewSteps extends BaseTest {
         Assert.assertEquals(expectedName, womenProductsPage.getReturnedElemName());
 
     }
-
-    @After
-    public void afterTest() {
-        driver.close();
-        driver.quit();
-    }
 }

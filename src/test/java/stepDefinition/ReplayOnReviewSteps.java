@@ -62,11 +62,7 @@ public class ReplayOnReviewSteps extends BaseTest {
     public void click_on_replay_button() throws Throwable {
         womenProductsPage.clickOnReplayBtn();
         Assert.assertTrue(womenProductsPage.isReplyFormDisplayed());
+
     }
 
-    @After
-    public void afterTest() {
-        driver.close();
-        driver.quit();
-    }
 }

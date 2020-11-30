@@ -55,11 +55,7 @@ public class CommunityPollSteps extends BaseTest {
     @And("Validate that the COMMUNITY POLL is updated")
     public void validate_that_the_community_poll_is_updated() throws Throwable {
         Assert.assertTrue(womenProductsPage.isRadioBtnChecked());
+
     }
 
-    @After
-    public void afterTest() {
-        driver.close();
-        driver.quit();
-    }
 }

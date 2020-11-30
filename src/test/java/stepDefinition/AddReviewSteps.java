@@ -83,14 +83,13 @@ public class AddReviewSteps extends BaseTest {
         if (element.equals("added")) {
             Assert.assertTrue(driver.findElement(By.xpath("//div[@class='tab2 resp-tab-content resp-tab-content-active']//p[contains(text(), '" + reviewDetails.get(0).get("message") + "')]")).isDisplayed());
         } else {
-            Assert.assertFalse(driver.findElement(By.xpath("//div[@class='tab2 resp-tab-content resp-tab-content-active']//p[contains(text(), '" + reviewDetails.get(0).get("message") + "')]")).isDisplayed());
+            Assert.assertEquals(1,driver.findElements(By.xpath("//div[@class='tab2 resp-tab-content resp-tab-content-active']//p")).size());
         }
     }
 
-
     @After
-    public void afterTest() {
-        driver.close();
+    public void quitDriver(){
         driver.quit();
     }
+
 }
